@@ -7,6 +7,28 @@
     <title>Register</title>
 </head>
 <body>
-    Register Here
+    <h1>Registeration page</h1>
+    <form action="../successReg/successReg.html" method="POST">
+        <label for="fname">First name</label><br>
+        <input name="fname" type="text" required><br>
+        <label for="lname">Last name</label><br>
+        <input name="lname" type="text"><br>
+        <label for="number" >Phone Number</label><br>
+        <input name="number" type="number" ><br>
+        <label for="email">Email </label><br>
+        <input name="email" type="email"  required><br>
+        <label for="gender">Gender</label><br>
+        <select name="gender"  required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="nonBinary">Non-Binary</option>
+            <option value="anon">Prefer not to say</option>
+        </select><br>
+        <label for="dob">Date of birth</label><br>
+        <input name="dob" type="date"  required><br>
+        <label for="favcolor">Favorite Color</label><br>
+        <input name="favcolor" type="color"><br><br>
+        <input name="submit" type="submit">
+    </form>
 </body>
 </html>
