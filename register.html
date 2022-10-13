@@ -3,20 +3,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <title>Register</title>
 </head>
 <body>
-    <h1>Registeration page</h1>
-    <form action="../successReg/successReg.html" method="POST">
-        <label for="fname">First name</label><br>
-        <input name="fname" type="text" required><br>
-        <label for="lname">Last name</label><br>
-        <input name="lname" type="text"><br>
-        <label for="number" >Phone Number</label><br>
-        <input name="number" type="number" ><br>
-        <label for="email">Email </label><br>
-        <input name="email" type="email"  required><br>
+    <h1>Register</h1>
+    <form action="successReg.html" method="POST">
+        <input name="fname" type="text" required value="first name"><br>
+
+        <input name="lname" type="text" value="last name"><br>
+        <label for="number">Phone Number</label><br>
+        <input name="number" type="number" value="phone-number"><br>
+
+        <input name="email" type="email"  required value="email"><br>
         <label for="gender">Gender</label><br>
         <select name="gender"  required>
             <option value="male">Male</option>
@@ -28,7 +30,7 @@
         <input name="dob" type="date"  required><br>
         <label for="favcolor">Favorite Color</label><br>
         <input name="favcolor" type="color"><br><br>
-        <input name="submit" type="submit">
+        <input class="button"  name="submit" type="submit">
     </form>
 </body>
 </html>
