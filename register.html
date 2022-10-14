@@ -12,13 +12,13 @@
 <body>
     <h1>Register</h1>
     <form action="successReg.html" method="POST">
-        <input name="fname" type="text" required value="first name"><br>
+        <input  onfocus="this.value = ''" name="fname" type="text" required value="first name"><br>
 
-        <input name="lname" type="text" value="last name"><br>
+        <input  name="lname" type="text" value="last name"  onfocus="this.value = ''" required><br>
         <label for="number">Phone Number</label><br>
         <input name="number" type="number" value="phone-number"><br>
 
-        <input name="email" type="email"  required value="email"><br>
+        <input name="email" type="email"  required value="email" onfocus="this.value = ''"><br>
         <label for="gender">Gender</label><br>
         <select name="gender"  required>
             <option value="male">Male</option>
